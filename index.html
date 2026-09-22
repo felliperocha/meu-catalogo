@@ -40,20 +40,12 @@
             console.error('Erro ao copiar: ', err);
         });
     }</script>
-        <script>
-  (function(d,t) {
-    var BASE_URL="https://chatwoot-ikgx9fj1iy9voupjuhzv6zjv.fellipedev.com.br";
-    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=BASE_URL+"/packs/js/sdk.js";
-    g.async = true;
-    s.parentNode.insertBefore(g,s);
-    g.onload=function(){
-      window.chatwootSDK.run({
-        websiteToken: 'mVYUnkmdfpfx23cbN2qFqxuv',
-        baseUrl: BASE_URL
-      })
-    }
-  })(document,"script");
+       <script>
+  window.LibredeskSettings = {
+    baseURL: 'http://localhost:9000',
+    inboxID: '08468cfc-0577-4a85-8ad0-677f54ed1a64'
+  };
 </script>
+<script async src="http://localhost:9000/widget.js"></script>
 
     <script defer src="https://umami.fellipedev.com.br/script.js" data-website-id="f35b1816-57ae-4e23-ad86-ae3e4bbb9613"></script>
